@@ -90,5 +90,7 @@ class TicTacToe
     turn until over?
     if winner == "X"
       puts "Congratulations X!"
+    elsif winner == "O"
+      puts "Congratulations O!"
   end
 end

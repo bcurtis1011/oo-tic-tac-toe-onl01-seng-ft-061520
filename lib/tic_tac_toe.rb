@@ -92,5 +92,6 @@ class TicTacToe
       puts "Congratulations X!"
     elsif winner == "O"
       puts "Congratulations O!"
+    end
   end
 end

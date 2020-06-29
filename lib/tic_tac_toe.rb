@@ -77,5 +77,13 @@ class TicTacToe
     won? || full? || draw?
   end
   
-  
+  def winner
+    if won? == nil || @board[won?.first] != "X" && @board[won?.first] != "O"
+      false
+    elsif @board[won?.first] == "X"
+      "X"
+    else
+      "O"
+    end
+  end
 end

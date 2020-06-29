@@ -63,8 +63,15 @@ class TicTacToe
       @board[position[0]] == @board[position[1]] && @board[position[1]] == @board[position[2]] && @board[position[2]] != " "
     end
   end
+  
   def full?
     @board.include?("X" || "O")
     !@board.include?(" ")
   end
+  
+  def draw?
+    full? && !won?
+  end
+  
+  
 end

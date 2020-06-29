@@ -79,7 +79,7 @@ class TicTacToe
   
   def winner
     if won? == nil || @board[won?.first] != "X" && @board[won?.first] != "O"
-      false
+      nil
     elsif @board[won?.first] == "X"
       "X"
     else
